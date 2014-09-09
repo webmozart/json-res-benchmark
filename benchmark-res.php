@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
-
 $time = microtime(true);
 
 $bundle = new \ResourceBundle('en', __DIR__.'/res', true);
