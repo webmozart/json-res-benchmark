@@ -28,6 +28,7 @@ Console Output (.json array)
 ----------------------------
 
 ```
+$ php benchmark-json-array.php
 Nb of Currencies: 296
 Nb of Alpha3-Numeric mappings: 255
 Time: 1.4529228210449ms
