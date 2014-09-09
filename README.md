@@ -37,9 +37,9 @@ Peak Memory: 512kB
 Results
 -------
 
-Benchmark        | .json  | .res
----------------- | ------ | -------
-Time             | 1.63ms | 1.05ms
-Memory           | 768kB  | 512kB
-File Size (raw)  | 23.2kB | 33.4kB
-File Size (.zip) | 9.7kB  | 15.3kB
+Benchmark        | .json      | .res
+---------------- | ---------- | -------
+Time             | 1.63ms     | **1.05ms**
+Memory           | 768kB      | **512kB**
+File Size (raw)  | **23.2kB** | 33.4kB
+File Size (.zip) | **9.7kB**  | 15.3kB
