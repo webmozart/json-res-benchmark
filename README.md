@@ -22,6 +22,17 @@ Memory: 768kB
 Peak Memory: 768kB
 ```
 
+Console Output (.json array)
+----------------------------
+
+```
+Nb of Currencies: 296
+Nb of Alpha3-Numeric mappings: 255
+Time: 1.4529228210449ms
+Memory: 768kB
+Peak Memory: 768kB
+```
+
 Console Output (.res)
 ----------------------
 
@@ -37,9 +48,9 @@ Peak Memory: 512kB
 Results
 -------
 
-Benchmark        | .json      | .res
----------------- | ---------- | -------
-Time             | 1.63ms     | **1.05ms**
-Memory           | 768kB      | **512kB**
-File Size (raw)  | **23.2kB** | 33.4kB
-File Size (.zip) | **9.7kB**  | 15.3kB
+Benchmark        | .json      | .json array | .res
+---------------- | ---------- | ----------- | -------
+Time             | 1.63ms     | 1.45ms      | **1.05ms**
+Memory           | 768kB      | 768kB       | **512kB**
+File Size (raw)  | **23.2kB** | like .json  | 33.4kB
+File Size (.zip) | **9.7kB**  | like .json  | 15.3kB
