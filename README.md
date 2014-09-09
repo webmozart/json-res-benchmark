@@ -22,6 +22,8 @@ Memory: 768kB
 Peak Memory: 768kB
 ```
 
+Note: The number of Alpha3-Numeric mappings in this sample is 1 since `json_decode()` returns (uncountable) objects instead of arrays here.
+
 Console Output (.json array)
 ----------------------------
 
