@@ -10,50 +10,20 @@ would affect both benchmarks.
 The benchmark is merging all currency names from both the "en_GB" and the "en" locale.
 It then loads generic mapping data from the meta locale "root".
 
-Console Output (.json)
-----------------------
+Results (opcache disabled)
+--------------------------
 
-```
-$ php benchmark-json.php 
-Nb of Currencies: 296
-Nb of Alpha3-Numeric mappings: 1
-Time: 1.6300678253174ms
-Memory: 768kB
-Peak Memory: 768kB
-```
+Benchmark        | .json      | .json array | .res       | .php
+---------------- | ---------- | ----------- | ---------- | --------
+Time             | 1.52ms     | 1.42ms      | **0.96ms** | 2.9ms
+Memory           | 768kB      | 768kB       | **512kB**  | 768kB
+Peak Memory      | 768kB      | 768kB       | **512kB**  | 768kB
 
-Note: The number of Alpha3-Numeric mappings in this sample is 1 since `json_decode()` returns (uncountable) objects instead of arrays here.
+Results (opcache enabled)
+-------------------------
 
-Console Output (.json array)
-----------------------------
-
-```
-$ php benchmark-json-array.php
-Nb of Currencies: 296
-Nb of Alpha3-Numeric mappings: 255
-Time: 1.4529228210449ms
-Memory: 768kB
-Peak Memory: 768kB
-```
-
-Console Output (.res)
-----------------------
-
-```
-$ php benchmark-res.php 
-Nb of Currencies: 296
-Nb of Alpha3-Numeric mappings: 255
-Time: 1.054048538208ms
-Memory: 512kB
-Peak Memory: 512kB
-```
-
-Results
--------
-
-Benchmark        | .json      | .json array | .res
----------------- | ---------- | ----------- | -------
-Time             | 1.63ms     | 1.45ms      | **1.05ms**
-Memory           | 768kB      | 768kB       | **512kB**
-File Size (raw)  | **23.2kB** | like .json  | 33.4kB
-File Size (.zip) | **9.7kB**  | like .json  | 15.3kB
+Benchmark        | .json      | .json array | .res       | .php
+---------------- | ---------- | ----------- | ---------- | --------
+Time             | 1.6ms      | 1.45ms      | **0.9ms**  | 4.25ms
+Memory           | 768kB      | 768kB       | **512kB**  | 768kB
+Peak Memory      | 768kB      | 768kB       | **512kB**  | 1280kB
