@@ -15,15 +15,15 @@ Results (opcache disabled)
 
 Benchmark        | .json      | .json array | .res       | .php
 ---------------- | ---------- | ----------- | ---------- | --------
-Time             | 1.52ms     | 1.42ms      | **0.96ms** | 2.9ms
-Memory           | 768kB      | 768kB       | **512kB**  | 768kB
-Peak Memory      | 768kB      | 768kB       | **512kB**  | 768kB
+Time             | 13.5ms     | 11.8ms      | **5.66ms** | 25.25ms
+Memory           | 1024kB     | 1024kB      | **512kB**  | 1024kB
+Peak Memory      | 1024kB     | 1024kB      | **512kB**  | 1536kB
 
 Results (opcache enabled)
 -------------------------
 
 Benchmark        | .json      | .json array | .res       | .php
 ---------------- | ---------- | ----------- | ---------- | --------
-Time             | 1.6ms      | 1.45ms      | **0.9ms**  | 4.25ms
-Memory           | 768kB      | 768kB       | **512kB**  | 768kB
-Peak Memory      | 768kB      | 768kB       | **512kB**  | 1280kB
+Time             | 13.4ms     | 11.8ms      | **5.9ms**  | 10ms
+Memory           | 1024kB     | 1024kB      | **512kB**  | 1024kB
+Peak Memory      | 1024kB     | 1024kB      | **512kB**  | 1280kB
